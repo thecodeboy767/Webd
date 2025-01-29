@@ -96,8 +96,8 @@ section {
 }
 
 section h2 {
-    font-size: 28px;
-    border-bottom: 4px solid #00BFFF;
+    font-size: 45px;
+    /* border-bottom: 4px solid #00BFFF; */
     padding-bottom: 12px;
     margin-bottom: 15px;
 }
