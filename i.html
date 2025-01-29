@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Rating Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Shadows+Into+Light&family=Unbounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+        <a href="Draft.html" class="logo">CriticOtaku</a>
+        <ul>
+            <li><a href="Draft.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="comm.html">Community</a></li>
+            <li> <form class="DropDown" action="" method="get">
+                <label for="fruits"></label>
+                <label for="fruits"></label>
+                <label for="fruits"></label>
+                <select id="fruits" name="fruits" onchange="window.location.href=this.value;">
+                  <option value="">Select...</option>
+                  <option value="upd.html">Updates </option>
+                  <option value="about.html">About</option>
+                  <option value="contact.html">Contact Us</option>
+                  <option value="terms.html">Terms&Cond.</option>
+                  <option value="priv.html">Privacy Policy</option>
+                  <option value="faq.html">FAQs</option>
+                  <option value="rev.html">Reviews</option>
+                </select>
+              </form>
+            </li><style>.DropDown select {
+                background-color: #1A1A1D;
+                color: #FFA500;
+                font-family: 'Russo One', sans-serif;
+                font-size: 16px;
+                padding: 10px;
+                border: 2px solid #FFA500;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+              }
+              
+              .DropDown select:hover {
+                background-color: #00BFFF;
+                color: white;
+              }
+              
+              .DropDown select:focus {
+                outline: none;
+                border-color: #FF6347;
+              }
+              
+              .DropDown label {
+                font-family: 'Russo One', sans-serif;
+                color: #FFA500;
+                font-size: 16px;
+                margin-right: 10px;
+                padding: 5px 10px;
+              }</style>
+        </ul>
+    </nav>
+</div>
+<style>
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+header {
+background: #1A1A1D;
+padding: 15px 0;
+border-bottom: 2px solid #FFA500;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 20px;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+}
+
+nav a {
+text-decoration: none;
+color: #FFA500;
+font-family: 'Russo One', sans-serif;
+font-size: 18px;
+position: relative;
+padding: 5px 10px;
+border-radius: 5px;
+transition: all 0.3s ease;
+display: inline-block;
+}
+
+nav a:hover {
+color: white;
+background: #00BFFF;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+color: white;
+background: #FF6347;
+font-weight: bold;
+}
+</style>   
+<hr><div class="Updates">
+  <a href="upd.html" class="no-underline">
+    <button class="cta-btn">News/Updates</button>
+  </a>
+
+  <marquee class="marquee" scrollamount="15" onmouseover ="stop">
+    <p><b>New Season of One Punch Man Coming Soon!</b> Season 3 of the beloved superhero parody is finally on its way! The release is expected in late 2025.</p>
+    || <p><b>Fire Force Season 3 Premiere Date Announced:</b> The third season of Fire Force is set to release in April 2025. Expect more firefighting action!</p>
+    || <p><b>My Hero Academia Final Season: What’s Next?</b> The final season of My Hero Academia is scheduled for release in October 2025. Get ready for epic battles!</p>
+    || <p><b>Solo Leveling Season 2 Continues in 2025:</b> Solo Leveling’s second season picks up with more action and power fantasy. New episodes are coming in early 2025.</p>
+    || <p><b>Dandadan Season 2: What to Expect:</b> Dandadan returns in 2025 with even more thrilling supernatural action!</p>
+    || <p><b>Attack on Titan: The Final Arc Continues:</b> More intense battles and shocking twists await in 2025 as Attack on Titan’s final arc continues.</p>
+  </marquee>
+</div>
+
+<style>
+  .Updates {
+    position: relative;
+  }
+
+  .cta-btn {
+    position: relative;
+    z-index: 2;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .marquee {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  marquee p {
+    display: inline;
+  }
+</style>
+
+        <section class="hero">
+        <h2>Your Anime Journey Starts Here</h2>
+        <p>Join the ranks of anime legends. Find, rate, and discover the greatest anime of all time!</p>
+        <button class="cta-btn" ><a href="upd.html">Start Talking</a> </button>
+        <hr>
+        <p>Step into the world of anime! Explore, watch, and immerse yourself in the greatest shows of all time!</p>
+        <button class="cta-btn">Start Watching</button>
+
+    </section>
+
+    <div class="container main-content">
+        <section class="account-overview">
+            <h2>Your Mission: "I will never give up!" - Naruto Uzumaki</h2>
+            <ul>
+                <li><strong>Watchlist:</strong> [X Anime]</li>
+                <li><strong>Reviews Written:</strong> [X Reviews]</li>
+                <li><strong>Your Power Level:</strong> [X Stars]</li>
+            </ul>
+        </section>
+
+        <section class="featured-anime">
+            <h2>Featured Anime: Epic Shows Await</h2>
+            <div class="anime-list">
+                <div class="anime-item">
+                    <h3>Attack on Titan</h3>
+                    <p>Action | Rating: 10 Stars</p>
+                    <p><em>"If you win, you live. If you lose, you die. If you don't fight, you can't win."- Eren Yeager</em></p>
+                </div>
+                <div class="anime-item">
+                    <h3>Naruto</h3>
+                    <p>Action | Rating: 9.7 Stars</p>
+                    <p><em>"The moment people come to know love, they run the risk of carrying hate." - Naruto Uzumaki</em></p>
+                </div>
+                <div class="anime-item">
+                    <h3>Jujutsu Kaisen</h3>
+                    <p>Action | Rating: 9.4 Stars</p>
+                    <p><em>"In all the heavens and the earth, I alone am the honored one." - Gojo Satoru</em></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="anime-categories">
+            <h2>Anime Categories: Choose Your Path, Like Luffy Would</h2>
+            <div class="categories">
+                <div class="category">
+                    <h3>Genres</h3>
+                    <ul>
+                        <li><a href="" class="no-underline">Action</a></li>
+                        <li><a href="" class="no-underline">Romance</a></li>
+                        <li><a href="" class="no-underline">Fantasy</a></li>
+                        <li><a href="" class="no-underline">Comedy</a></li>
+                        <li><a href="" class="no-underline">Thriller</a></li>
+                        <li><a href="" class="no-underline">Horror</a></li>
+                       
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h3>Top Rated</h3>
+                    <ul>
+                        <li>One Piece - 10 Stars</li>
+                        <li>Attack on Titan - 10 Stars</li>
+                        <li>Demon Slayer - 9.5 Stars</li>
+                    </ul>
+                </div>
+
+                <div class="category">
+                    <h3>New Releases</h3>
+                    <ul>
+                        <li>[Anime Title] [Release Date]</li>
+                        <li>[Anime Title] [Release Date]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="user-profile">
+
+            <h2>Your Profile: "I am going to be King of the Pirates!" - Monkey D. Luffy</h2>
+            <p><strong>Watchlist:</strong> [Anime Title 1], [Anime Title 2], [Anime Title 3]</p>
+            <p><strong>Your Reviews:</strong></p>
+            <ul>
+                <li><em>[Anime Title 1]</em> - "Unbelievable story! The twists had me on the edge of my seat." (Rating: X/10)</li>
+                <li><em>[Anime Title 2]</em> - "The beginning was slow, but once it picked up, I couldn't stop!" (Rating: X/10)</li>
+            </ul>
+        </section>
+        <div class="scrolling-wrapper">
+            <button class="arrow-left" onclick="document.querySelector('.scrolling-container').scrollBy({ left: -300, behavior: 'smooth' })">&#8249;</button>
+              
+            <div class="scrolling-wrapper">
+                <div class="scrolling-container">
+          
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="apple.jpg" alt="Apples">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Apples - ₹22</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="banana.jpg" alt="Bananas">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Bananas - ₹21</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="carrot.jpg" alt="Carrots">
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Carrots - ₹20</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="bread.jpg" alt="Bread">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Bread - ₹21</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="egg.jpg" alt="Eggs">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Eggs - ₹23</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="milk.jpg" alt="Milk">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Milk - ₹22</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="chicken.jpg" alt="Chicken">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Chicken - ₹25</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="rice.jpg" alt="Rice">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Rice - ₹24</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="orange.jpg" alt="Oranges">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Oranges - ₹22</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="fish.jpg" alt="Fish">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Fish - ₹27</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="tomato.jpg" alt="Tomatoes">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Tomatoes - ₹21</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="potato.jpg" alt="Potatoes">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Potatoes - ₹21</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="cheese.jpg" alt="Cheese">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Cheese - ₹24</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="butter.jpg" alt="Butter">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Butter - ₹23</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="yogurt.jpg" alt="Yogurt">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Yogurt - ₹22</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flip-card">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="honey.jpg" alt="Honey">
+                        </div>
+                        <div class="flip-card-back">
+                          <p>Honey - ₹26</p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <button class="arrow-right" onclick="document.querySelector('.scrolling-container').scrollBy({ left: 300, behavior: 'smooth' })">&#8250;</button>
+          </div>
+         
+
+        <section class="anime-news">
+            <h2>News: Stay on Top of the Anime World</h2>
+            <p><strong>Upcoming Anime:</strong></p>
+            <ul>
+                <li>[Anime Title]  [Release Date]</li>
+                <li>[Anime Title]  [Release Date]</li>
+            </ul>
+        </section>
+
+        <section class="search-bar">
+            <h2>Search for Your Next Adventure: "Power is not determined by your size, but the size of your heart and dreams." - Dragon Ball Z</h2>
+            <input type="text" placeholder="Search by Title, Genre, or Rating">
+        </section>
+    </div>
+          <div class="footer-links">
+            <p>&copy; 2025 Anime Rating Hub. All Rights Reserved.</p>
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact Us</a> | 
+            <a href="priv.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a>
+          </div>
+          <style>
+          .footer-links a {
+          color: #00BFFF; 
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 18px;
+          }
+
+          .footer-links a:hover {
+          text-decoration: none;
+          }
+          .footer-links{
+          background-color: #fff;
+          color: red;
+          margin-top: 20px;
+          display: flex;
+          justify-content: space-around;
+          }
+          </style>
+
+
+</body>
+</html>

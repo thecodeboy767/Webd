@@ -1,0 +1,124 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0; 
+    overflow: hidden; 
+  }
+  
+  .login-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-back {
+    background: #1f1f1f; 
+    padding: 40px;
+    border-radius: 16px;
+    width: 380px;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #bbb; 
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 10px; 
+    font-size : 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #2a2a2a; 
+    color: #f4f4f4; 
+    transition: all 0.3s ease; 
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #0073e6;
+    background-color: #3c3c3c; 
+    outline: none; 
+  }
+  
+  button {
+    background: linear-gradient(135deg, #0073e6, #005bb5); 
+    color: #fff;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-5px); 
+    background: linear-gradient(135deg, #005bb5, #003f8e); 
+  }
+  
+  button:active {
+    transform: translateY(5px); 
+  }
+  
+  .DMode {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    margin-right: 12px;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password a {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password a:hover {
+    color: #005bb5; 
+    text-decoration: underline;
+  }
