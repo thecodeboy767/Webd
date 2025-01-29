@@ -18,28 +18,44 @@
             color: #FFA500;
             text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
         }
-
+/* 
         header {
             background: #333333; 
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
+        } */
 
         header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            background-color: #f9f9fd;
         }
 
         .hero {
             background: url('anime-hero-bg.jpg') center no-repeat;
+            position: relative;
             background-size: cover;
             padding: 60px 20px;
             text-align: center;
             color: white;
             border-radius: 8px;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+        .Anya-image{
+            width:150px;
+            position: absolute;
+            top: 120px;
+            left:100px;
+            z-index: -1;
+        }
+        .Aizen-image{
+            position: absolute;
+            width: 450px;
+            top:175px;
+            right:0px;
+            z-index: -1;
         }
 
         .hero h2 {
@@ -51,11 +67,15 @@
         .hero p {
             font-size: 20px;
             margin-bottom: 25px;
+            margin-right:0;
         }
 
         .hero .cta-btn {
-            background: #00BFFF; 
-            color: #000;
+            background: #0269b3; 
+            color: white;
+             /* opacity:0.9;  */
+            font-family: Roboto, sans-serif;
+            font-weight:700;
             border: none;
             padding: 15px 30px;
             font-size: 20px;
@@ -65,7 +85,7 @@
         }
 
         .hero .cta-btn:hover {
-            background: #FF0000; 
+            background: #009dff; 
         }
 
         section {
@@ -90,8 +110,8 @@
         }
 
         footer {
-            background: #333333;
-            color: white;
+            background-color: #333333;
+            /* color: white; */
             text-align: center;
             padding: 20px;
             position: fixed;
