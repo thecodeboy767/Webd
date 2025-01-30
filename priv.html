@@ -21,6 +21,14 @@
     </div>
     </header>
     <style>
+        p{
+            opacity:0.8;
+        }
+        h2{
+            text-shadow:  0 0 40px #f9dd2891
+        }
+
+
     .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -80,10 +88,20 @@
     </style>
     
     <div class="header-banner">
-        <h1>Otaku Critic Privacy Policy</h1>
-        <p>We respect your privacy like we respect the art of anime! Trust us, your data is safe!</p>
+        <h1 style=" text-shadow: 0 0 10px #ff3700, 0 0 20px #ff3700, 0 0 30px #ff3700, 0 0 40px #ff3700;  
+        font: size 70px ;">Otaku Critic Privacy Policy</h1>
+        <p style="text-shadow:  0 0 40px #59c2ff; opacity: 1">We respect your privacy like we respect the art of anime! <br>Trust us, your data is safe!</p>
+        <img src="Asuna.png" class="asuna-image">
     </div>
-
+<style>
+    .asuna-image{
+        position: absolute;
+        width: 480px;
+        top:48px;
+        right:0;
+        z-index:-1;
+    }
+</style>
     <div class="container">
         <h2>1. What Information We Collect</h2>
         <p>Just like we collect anime recommendations, here’s what we collect to keep your experience smooth:</p>
@@ -136,29 +154,62 @@
         <h2>10. Questions? Let’s Talk!</h2>
         <p>If you have any questions or concerns about this policy, reach out to us. We’re here for all our fellow Otaku!</p>
         <ul>
-            <li><strong>Email:</strong> support@otakucritic.com</li>
-            <li><strong>Address:</strong> 123 Anime St., Otaku City, Japan 00000</li>
+            <li><strong>Email: </strong> sakuraTrash@otakucritic.com</li>
+            <li><strong>Address: </strong> 123 Anime St., Otaku City, Japan 00000</li>
         </ul>
     </div>
 
-    
-        <div class="footer-links">
-            <a href="terms.html">Terms of Service</a>
-            <a href="contact.html">Contact Us</a>
+    <p style="opacity:0.8">&copy; 2025 Otaku Critic. All Rights Reserved.</p>
+        <div class="footer-links" style="padding-top:10px;">
+            <a href="terms.html">Terms of Service</a> |
+            <a href="contact.html">Contact Us</a>|
             <a href="faq.html">FAQs</a> |
             <a href="about.html">About Us</a>
         </div>
-        <p>&copy; 2025 Otaku Critic. All Rights Reserved.</p>
+        
         <div class="footer-links">
-            <p>&copy; 2025 Anime Rating Hub. All Rights Reserved.</p>
-            <a href="about.html">About Us</a> | 
+            <p style="opacity:0.8">&copy; 2025 Anime Rating Hub. All Rights Reserved.</p>
+            <div style="margin-top:20px">
+                <a href="about.html">About Us</a> | 
             <a href="contact.html">Contact Us</a> | 
             <a href="priv.html">Privacy Policy</a> |
             <a href="terms.html">Terms of Service</a>
+            </div>
+            
           </div>
           <style>
-          .footer-links a {
+          footer {
+            background-color: #333333;
+            /* color: white; */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .footer-links a {
+            color: #00BFFF;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        footer .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .no-underline {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .no-underline:hover {
+            text-decoration: none;
+            color: #FFA500;
+        }.footer-links a {
           color: #00BFFF; 
+          opacity:0.7;
           text-decoration: none;
           margin: 0 10px;
           font-size: 18px;
@@ -168,11 +219,14 @@
           text-decoration: none;
           }
           .footer-links{
-          background-color: #fff;
-          color: red;
-          margin-top: 20px;
+          background-color: #10002B;
+          color: rgba(255, 255, 255, 0.411);
+          margin-top: 0px;
           display: flex;
           justify-content: space-around;
+          }
+          .bottom{
+            margin-top: 20px;
           }
           </style>
 

@@ -62,20 +62,19 @@ nav li a:hover {
 }
 
 nav .active {
-    color: white;
-    background: #FF6347;
+    color: rgb(220, 220, 220);
+    background: #d4902a;
     font-weight: bold;
 }
 
-/* Profile Banner */
 .profile-banner {
-    background: url('profile-banner.jpg') center no-repeat;
+    background: url('d49c795c05c54e3f1f9242753cf8c8f5.jpg') center no-repeat;
     background-size: cover;
     padding: 120px 30px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 15px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); */
     position: relative;
     animation: fadeIn 1.5s ease-out;
 }
@@ -93,7 +92,8 @@ nav .active {
 
 .profile-banner h2 {
     font-size: 50px;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light';
+    font-weight: 600;
     margin-bottom: 20px;
     animation: slideInFromLeft 2s ease-out;
 }
@@ -101,25 +101,28 @@ nav .active {
 .profile-banner p {
     font-size: 22px;
     margin-bottom: 30px;
-    animation: slideInFromLeft 2.5s ease-out;
+    animation: slideInFromLeft 2.5s ease-out;   
+    opacity: 0.7;
 }
 
-/* Profile Layout */
+
 .profile-container {
     display: flex;
     margin-top: -60px;
     gap: 30px;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensures it stacks on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .profile-info {
+    position: relative;
     flex: 1;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     transition: 0.4s ease;
+    z-index : 3;
 }
 
 .profile-info:hover {
@@ -144,8 +147,9 @@ nav .active {
 .edit-btn {
     background: #00BFFF;
     color: #000;
-    padding: 15px 30px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Unbounded', cursive;
+    font-size: 15px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -153,8 +157,8 @@ nav .active {
 }
 
 .edit-btn:hover {
-    background: #FF6347;
-    color: white;
+    background: #2889de;
+    color: rgb(255, 255, 255);
 }
 
 .profile-avatar {
