@@ -73,18 +73,16 @@ header .user-info a:hover {
 
 .hero .cta-btn {
     background: #00BFFF; 
-    color: #000;
+    color: #0c0c0c;
     border: none;
     padding: 15px 30px;
-    font-size: 20px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s ease;
     text-decoration : none;
-}
-
-.hero .cta-btn:hover {
-    background: #FF0000; 
 }
 
 section {
@@ -127,29 +125,23 @@ section h2 {
 
 .search-bar input:focus {
     outline: none;
-    background: #FFA500; 
+    
     color: #000;
 }
 
 
 
 .footer-links a {
+    padding-top: 10px;
     color: #00BFFF; 
     text-decoration: none;
-    margin: 0 10px;
+    margin: 5px 10px;
     font-size: 18px;
 }
-
 .footer-links a:hover {
     text-decoration: none;
 }
- .footer-links{
-    background-color: #fff;
-    color: red;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-  }
+
   .scrolling-wrapper {
     position: relative;
     width: 90%;
